@@ -30,3 +30,8 @@ loop1: for (let i = 0; i < 3; i++) {
     }
   }
 ```  
+
+# Always use ; to terminate end of lines and statements !
+
+Because if you left ASI (Automatic semicolon insertion) do this you will maybe encounter many errors !!  
+
