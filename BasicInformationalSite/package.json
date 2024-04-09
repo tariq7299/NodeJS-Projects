@@ -1,0 +1,19 @@
+{
+  "name": "basicinformationalsite",
+  "version": "1.0.0",
+  "description": "This the first node js project i got to do for my NodeJS course from OdinProject",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tariq7299/NodeJS-Projects.git"
+  },
+  "author": "Tariq Sarhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tariq7299/NodeJS-Projects/issues"
+  },
+  "homepage": "https://github.com/tariq7299/NodeJS-Projects#readme"
+}
