@@ -35,3 +35,52 @@ loop1: for (let i = 0; i < 3; i++) {
 
 Because if you left ASI (Automatic semicolon insertion) do this you will maybe encounter many errors !!  
 
+# There is two types of Obj in javascript  
+
+## Data property  
+
+```javascript
+const obj = {
+  name: 'John Doe'
+};
+
+// Data property attributes
+Object.getOwnPropertyDescriptor(obj, 'name');
+// Output: { value: 'John Doe', writable: true, enumerable: true, configurable: true }
+```
+
+## Accessor property  
+```javascript
+const obj = {
+  _name: 'John Doe',
+  get name() {
+    return this._name;
+  },
+  set name(value) {
+    this._name = value;
+  }
+};
+
+// Accessor property attributes
+Object.getOwnPropertyDescriptor(obj, 'name');
+// Output: { get: [Function: name], set: [Function: name], enumerable: true, configurable: true }
+``` 
+# Class declaration
+
+```javascript
+// Declaration
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+
+// Expression; the class is anonymous but assigned to a variable
+const Rectangle = class {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+```
