@@ -48,3 +48,52 @@ The main differences between URL parameters and URL queries are:
 1.  **Placement**: URL parameters are part of the URL path, while query strings are appended to the end of the URL.
 2.  **Purpose**: URL parameters are used to identify specific resources or values, while query strings are used to pass additional information or parameters to the server.
 3.  **Usage**: URL parameters are often used for dynamic routing, while query strings are used for filtering, sorting, or modifying the behavior of the application.
+# There is two types of Obj in javascript  
+
+## Data property  
+
+```javascript
+const obj = {
+  name: 'John Doe'
+};
+
+// Data property attributes
+Object.getOwnPropertyDescriptor(obj, 'name');
+// Output: { value: 'John Doe', writable: true, enumerable: true, configurable: true }
+```
+
+## Accessor property  
+```javascript
+const obj = {
+  _name: 'John Doe',
+  get name() {
+    return this._name;
+  },
+  set name(value) {
+    this._name = value;
+  }
+};
+
+// Accessor property attributes
+Object.getOwnPropertyDescriptor(obj, 'name');
+// Output: { get: [Function: name], set: [Function: name], enumerable: true, configurable: true }
+``` 
+# Class declaration
+
+```javascript
+// Declaration
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+
+// Expression; the class is anonymous but assigned to a variable
+const Rectangle = class {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+```
