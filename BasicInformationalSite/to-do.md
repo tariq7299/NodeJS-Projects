@@ -1,4 +1,8 @@
 -   Popultate the index.html page with some stuff *DONE*
--   What is `req.on` ??
+-   What is `req.on` ?? *DONE*
 -   Read and implement 10 examples from the NodeJS docs  
--   
+-   What is socket, connect method, what is a net.connect?
+-   What is the difference between net.createServer() and http.createServer() ??
+-   What is TCP client and a TCP server?
+-   What is the difference between HTTP and WebSockt connections ?
+-   What is net.createServer() and net.CreateClient()
