@@ -1,2 +1,4 @@
--   Popultate the index.html page with some stuff
+-   Popultate the index.html page with some stuff *DONE*
+-   What is `req.on` ??
+-   Read and implement 10 examples from the NodeJS docs  
 -   
