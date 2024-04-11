@@ -1,8 +1,10 @@
 const http = require('node:http');
 const fs = require('node:fs');
 
-const hostname = '127.0.0.1';
+const hostname = '192.168.1.8';
 const port = 8080;
+
+const agent = new http.Agent()
 
 const server = http.createServer((req, res) => {
     if (req.url == "/") {
@@ -29,8 +31,6 @@ const server = http.createServer((req, res) => {
     }
 });
 
-const agent = new http.agent({keepAlive: true, keepAliveMsecs: 2000, maxSockets: 2})
-
 
 agent.on('socket', (socket) => {
     console.log('New socket assigned:', socket.remoteAddress);
@@ -38,10 +38,10 @@ agent.on('socket', (socket) => {
 agent.on('free', (socket) => {
     console.log('Socket became available for reuse:', socket);
 });
-agent.on('idle', (socket) => {
+agent.on('idle', () => {
     console.log('Agent is idle');
 });
-agent.on('close', (socket) => {
+agent.on('close', () => {
     console.log('Agent was closed');
 });
 agent.on('agentRemove', (socket) => {
@@ -50,4 +50,6 @@ agent.on('agentRemove', (socket) => {
   
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
+
+  // Make requests to the server to test the Agent configuration
 });
