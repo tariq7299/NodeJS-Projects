@@ -97,3 +97,8 @@ const Rectangle = class {
   }
 };
 ```
+
+# `.on()` method in NodeJS
+.on() Method:  
+The .on() method is used to attach an event listener function to a specific event on an event emitter object.  
+The syntax is: emitter.on(eventName, listener), where eventName is the name of the event you want to listen for, and listener is the function that will be called when the event is emitted.
