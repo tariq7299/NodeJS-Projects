@@ -141,3 +141,13 @@ The correct statement would be:
 "In Express, this is achieved by using the express.Router constructor, which creates a new instance of the Router class."  
 
 The reason why the text refers to it as an "object" is likely due to the fact that the returned value from express.Router() is indeed an object, which can then be used to define and manage routing-related functionality.  
+
+# Difference between `Constructor Functions` and `Classes` in javascript
+Constructor Functions:  
+Defined using a regular function declaration or function expression.  
+The new keyword is used to create objects from the constructor function.  
+The this keyword is used to reference the new object being created.  
+Classes:  
+Defined using the class keyword, which was introduced in ES6 (ECMAScript 2015).  
+The constructor method is used to initialize the object's properties.  
+The new keyword is used to create objects from the class.  
