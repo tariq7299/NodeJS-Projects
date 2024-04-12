@@ -102,3 +102,42 @@ const Rectangle = class {
 .on() Method:  
 The .on() method is used to attach an event listener function to a specific event on an event emitter object.  
 The syntax is: emitter.on(eventName, listener), where eventName is the name of the event you want to listen for, and listener is the function that will be called when the event is emitted.
+
+# module.export in javascript
+
+ For example, if you have a file called myModule.js that contains some functionality you want to share with other parts of your application, you can add that functionality to the module.exports object, like this:  
+```javascript
+// myModule.js
+module.exports = {
+  myFunction: function() {
+    // some functionality
+  },
+  myVariable: 42
+};
+```
+Then, in another file, you can import and use the exported functionality like this:
+```javascript
+// anotherFile.js
+const myModule = require('./myModule');
+myModule.myFunction(); // call the exported function
+console.log(myModule.myVariable); // access the exported variable
+```
+By default, module.exports is an empty object ({}).  
+**exports:**  
+exports is a variable that Node.js initializes within each module.  
+Initially, exports points to the same object as module.exports.  
+It acts as a shorthand for module.exports.  
+When you add properties or methods to exports, you’re modifying the same object referenced by module.exports.  
+**The Relationship:**  
+Both exports and module.exports initially point to the same object.  
+If you reassign exports (e.g., exports = ...), it no longer points to module.exports.  
+However, if you modify properties of exports (e.g., exports.myFunction = ...), you’re modifying the object referenced by module.exports.  
+
+# A note about creating an object(class) instance from a class
+In the context of Express.js, express.Router() is a factory function that creates a new instance of the Router class, which is a core part of the Express.js framework.  
+
+The correct statement would be:  
+
+"In Express, this is achieved by using the express.Router constructor, which creates a new instance of the Router class."  
+
+The reason why the text refers to it as an "object" is likely due to the fact that the returned value from express.Router() is indeed an object, which can then be used to define and manage routing-related functionality.  
