@@ -5,4 +5,5 @@
 -   Export those routes .js module
 -   Import them into index.js file to use them in your app
 -   In order to use ejs you have to type `app.set("view engine", "ejs")` in your index.js file
+-   then convert every .html file to .ejs file
 -   
