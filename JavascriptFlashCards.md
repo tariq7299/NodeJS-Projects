@@ -147,7 +147,34 @@ Constructor Functions:
 Defined using a regular function declaration or function expression.  
 The new keyword is used to create objects from the constructor function.  
 The this keyword is used to reference the new object being created.  
-Classes:  
+Any function can be invoked as a constructor with the new keyword1.
 Defined using the class keyword, which was introduced in ES6 (ECMAScript 2015).  
 The constructor method is used to initialize the object's properties.  
 The new keyword is used to create objects from the class.  
+
+```javascript
+//Example of a constructor function:
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+// Prototype: The prototype property of the constructor function is used for inheritance.
+// Example:
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+Person.prototype.sayHello = function() {
+    console.log(`Hello, my name is ${this.name}.`);
+};
+const person1 = new Person("Alice", 30);
+person1.sayHello(); // Outputs: "Hello, my name is Alice."
+
+// Example of a class:
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+```
