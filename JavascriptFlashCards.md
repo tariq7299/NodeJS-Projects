@@ -189,3 +189,6 @@ First you need to install module `npm install debug --save-dev`
 `SET DEBUG=helloworld:* | npm start`  
 **Run helloworld on Linux/macOS**  
 `DEBUG=helloworld:* npm start `  
+
+# MiddleWare in expressJS
+Middleware is a complicated word for a basic concept. A middleware is just a plain JavaScript function that Express will call for you between the time it receives a network request and the time it fires off a response (i.e. it’s a function that sits in the middle)
