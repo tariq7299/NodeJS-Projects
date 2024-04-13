@@ -178,3 +178,14 @@ class Person {
   }
 }
 ```
+
+# Express generator
+Note: Unless you're using an old nodejs version (< 8.2.0), you could alternatively skip the installation and run express-generator with npx. This has the same effect as installing and then running express-generator but does not install the package on your system: `npx express-generator helloworld`
+
+# Better debug outputs in express applications  
+First you need to install module `npm install debug --save-dev`
+
+**Run helloworld on Windows with PowerShell**  
+`SET DEBUG=helloworld:* | npm start`  
+**Run helloworld on Linux/macOS**  
+`DEBUG=helloworld:* npm start `  

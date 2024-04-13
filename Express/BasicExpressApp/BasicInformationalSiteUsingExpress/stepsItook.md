@@ -1,0 +1,8 @@
+- install express
+-   Install ejs
+-   Create views folder that will contain your html files
+-   Create a routes folder that will contain .js routes logic
+-   Export those routes .js module
+-   Import them into index.js file to use them in your app
+-   In order to use ejs you have to type `app.set("view engine", "ejs")` in your index.js file
+-   

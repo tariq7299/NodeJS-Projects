@@ -1,0 +1,1 @@
+-   How to serve views for all route else server a 404 error page if the requested route is not included in the defined routes in my app !? iam using expressjs 
