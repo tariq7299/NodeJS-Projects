@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
 
 
     // Then you use it in another file for example like that:
-    
+
     // app.js
     const wiki = require("./wiki.js");
     // …
