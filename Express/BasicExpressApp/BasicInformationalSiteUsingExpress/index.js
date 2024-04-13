@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 // Importing routes
 const aboutPageRoute = require('./routes/aboutPageRoute');
-// const error404Route = require('./routes/404PageRoute')
 const contactMeRoute = require('./routes/contact-mePageRoute');
 
 
